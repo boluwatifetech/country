@@ -1,0 +1,132 @@
+*{
+   margin:0;
+font-family: 'Gloock', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+   padding:0;
+}
+body{
+background: #232f32;
+   
+}
+
+.img-country{
+    width:100%;
+    height:100%;
+}
+.img-country img{
+    width:100px;
+    height:80px;
+}
+.country-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    place-items:center;
+    align-items:center;
+    padding:0px 30px;
+    gap:15px;
+    justify-content:space-between;
+}
+
+.flex-country{
+    background:white;
+  max-width:100%;
+  width:300px;
+    padding: 5%;
+    border-radius:10px;
+    transition:all 1s ease;
+    box-shadow:2px 5px 2px 5px #131921;
+}
+.flex-country:hover{
+    transform:scale(1.05);
+}
+.camp-img{
+    display:flex;
+    margin:10px 0px;
+}
+.flex-country h3{
+margin:5px 0px;
+text-transform: capitalize;
+font-size:18px;
+font-weight: 500;
+}
+.flex-country h4{
+    text-transform:capitalize;
+    
+   
+    font-weight: 500;
+    font-size: 18px;
+}
+.flex-country p{
+    font-weight:500;
+margin-top: 5px;
+    text-transform:capitalize;
+    font-size: 18px;
+}
+.country{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 60px;
+    margin-bottom:30px;
+    background:#f5f5f7;
+}
+.flag{
+    font-size:50px;
+    color:#232f32;
+    transition:all 1s ease;
+    
+}
+.flag:hover{
+    color:red;
+}
+.country h1{
+    color:white;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.country input{
+   width:300px;
+   height:35px;
+    border-radius:15px;
+    outline:none;
+    border:none;
+padding-left:15px;
+background:gray;
+transition:all 1s ease;
+}
+.country input:focus{
+    background:transparent;
+    color:#232f32;
+    border:2px solid gray;
+}
+.country input:focus::placeholder{
+    font-weight:400;
+}
+.country input::placeholder{
+    color:white;
+    text-transform:capitalize;
+    font-size:13px;
+    font-family:cursive;
+}
+@media(max-width:1024px) {
+    .country-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width:600px) {
+    .country-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .country {
+        padding: 10px 20px;
+    }
+.flag{
+    margin-right:25px;
+}
+}
